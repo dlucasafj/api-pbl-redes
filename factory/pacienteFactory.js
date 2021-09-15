@@ -3,7 +3,7 @@ const PacienteService   = require('./../services/pacienteService.js')
 
 const {join} = require('path');
 
-const fileName = join(__dirname,'./../../database',"data.json");
+const fileName = join(__dirname,'./../database',"data.json");
 
 const generateInstace =  ()=>{
 
