@@ -139,7 +139,7 @@ socketServer.on("connection", function connection(socket, req) {
   });
 });
 
-httpServer.listen(PORT, () => {
+httpServer.listen(process.env.PORT || PORT, () => {
   console.log("server running", PORT);
 });
 
