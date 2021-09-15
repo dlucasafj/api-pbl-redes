@@ -25,7 +25,6 @@ const routes = {
     const [first, route] = url.split("/");
     const pacientes = await pacienteService.find(id);
     response.write(JSON.stringify({ paciente: pacientes }));
-    await Promise.reject("/paciente:get")
     const data = new Date();
 
     console.log(
