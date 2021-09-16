@@ -102,29 +102,31 @@ socketServer.on("connection", function connection(socket, req) {
   );
 
   // Recebe os dados do cliente
-  socket.on("message", async function incoming(message) {
-    const dado = JSON.parse(message);
-    const paciente = {
-      id: dado.id,
-      name: dado.name,
-      sistolica: dado.sistolica,
-      diastolica: dado.diastolica,
-      temperatura: dado.temperatura,
-      equipamento: dado.equipamento,
-    };
-    console.log(paciente); // visualiza dado enviado
-    const existe = await pacienteService.findName(paciente.name);
-    if (existe) {
-      const status = await pacienteService.updateValue(paciente.name, paciente);
-    } else {
-      const id_paci = await pacienteService.create(paciente);
-      socket.send(
-        JSON.stringify({
-          mensagem: `Paciente Cadastrado com ${id_paci}`,
-        })
-      );
-    }
-  });
+  setTimeout(()=>{
+    socket.on("message", async function incoming(message) {
+      const dado = JSON.parse(message);
+      const paciente = {
+        id: dado.id,
+        name: dado.name,
+        sistolica: dado.sistolica,
+        diastolica: dado.diastolica,
+        temperatura: dado.temperatura,
+        equipamento: dado.equipamento,
+      };
+      console.log(paciente); // visualiza dado enviado
+      const existe = await pacienteService.findName(paciente.name);
+      if (existe) {
+        const status = await pacienteService.updateValue(paciente.name, paciente);
+      } else {
+        const id_paci = await pacienteService.create(paciente);
+        socket.send(
+          JSON.stringify({
+            mensagem: `Paciente Cadastrado com ${id_paci}`,
+          })
+        );
+      }
+    });
+  },3500)
 
   // Quando o Cliente Encerra a conexão
   socket.on("close", function () {
