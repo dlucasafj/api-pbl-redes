@@ -5,7 +5,7 @@ Aplicação referente a API, desenvolvida em nodeJS
 
 ### Ferramentas Básicas
 
-NPM versão 7.21.0
+NPM versão 7.21.0 \
 yarn versão 1.22.11 
 
 
@@ -17,7 +17,7 @@ yarn versão 1.22.11
 
 ### GitHub
 -> Faça o Clone da Aplicação, no Link: https://github.com/dlucasafj/api-pbl-redes.git \
--> Execute o Comando yarn install, para baixar as dependências
+-> Execute o Comando <b>yarn install</b>, para baixar as dependências
 
 
 ### Para Rodar a Aplicação
