@@ -28,10 +28,10 @@ yarn versão 1.22.11
 
 Foi feito o deploy da aplicação no provedor de serviço Heroku. 
 
-A aplicação está online no link: https://api-pbl-redes-pb01.herokuapp.com/
+A aplicação está online no link: http://api-pbl-redes-pb01.herokuapp.com/
 
 ### Rota
 
-Para obter os dados da API no link: https://api-pbl-redes-pb01.herokuapp.com/paciente 
+Para obter os dados da API no link: http://api-pbl-redes-pb01.herokuapp.com/paciente 
 
 
