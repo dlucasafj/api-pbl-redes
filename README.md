@@ -16,7 +16,7 @@ yarn versão 1.22.11
 -> Execute o Comando <b>yarn init</b> ou <b>yarn install</b>, para baixar as dependências
 
 ### GitHub
--> Faça o Clone da Aplicação, no Link: https://github.com/dlucasafj/paciente-sensor.git  \
+-> Faça o Clone da Aplicação, no Link: https://github.com/dlucasafj/api-pbl-redes.git \
 -> Execute o Comando yarn install, para baixar as dependências
 
 
